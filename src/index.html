@@ -7,6 +7,9 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="/dist/output.css">
 
   <title>Frontend Mentor | Time tracking dashboard</title>
@@ -19,30 +22,154 @@
     }
 
     .attribution a {
-      color: hsl(228, 45%, 44%);
+      color: hsl(228, 53%, 70%);
     }
   </style>
 </head>
 
-<body class="bg-veryDarkBlue">
-  <div class="container flex-row ">
+<body class="bg-c_VeryDarkBlue relative">
+  <div
+    class="container flex flex-wrap items-center justify-center gap-6 absolute left-1/2 top-1/2 -translate-x-1/2 translate-y-1/2">
     <!-- Main Card -->
     <div>
-
-
-
-
-
-
-      
+      <!-- Top Card -->
+      <div
+        class="flex flex-col items-start justify-start gap-8 bg-c_Blue rounded-[10px] px-[25px] pt-[25px] pb-[5rem] w-[14rem]">
+        <img class="w-16 border border-[3px] border-white rounded-full" src="images/image-jeremy.png" alt="">
+        <div>
+          <h6 class="text-c_PaleBlue text-xs font-light">Report for</h6>
+          <p class="text-white text-4xl font-light">Jeremy Robson</p>
+        </div>
+      </div>
+      <!-- Bottom card-->
+      <div class="bg-c_DarkBlue w-[14rem] p-[25px] rounded-b-[10px]">
+        <ul class="flex flex-col gap-3 text-c_DesaturatedBlue">
+          <li class="hover:text-white transition-all"><a href="#daily">Daily</a></li>
+          <li class="hover:text-white transition-all active"><a href="#weekly">Weekly</a></li>
+          <li class="hover:text-white transition-all"><a href="#monthly">Monthly</a></li>
+        </ul>
+      </div>
     </div>
     <!-- Cards -->
-    <div></div>
+    <div class="flex flex-col">
+      <div class="flex flex-wrap">
+        <!-- Card -->
+        <div class="relative my-6 mr-5 w-[11rem]">
+          <!-- Top Card -->
+          <div class="absolute w-full -z-10 -top-7">
+            <div class="flex justify-end bg-c_Work rounded-[10px] pr-3 pb-6">
+              <img class="w-12" src="images/icon-work.svg" alt="">
+            </div>
+          </div>
+          <!-- Bottom Card -->
+          <div class="bg-c_DarkBlue text-white p-[25px] rounded-[10px]">
+            <div class="flex flex-row items-center justify-between mb-5">
+              <p class="text-xs">Work</p>
+              <img class="w-4 cursor-pointer" src="images/icon-ellipsis.svg" alt="">
+            </div>
+            <h2 class="text-5xl font-light mb-3">32hrs</h2>
+            <p class="text-xs text-c_PaleBlue font-light">Last Week - 36hrs</p>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="relative my-6 mr-5 w-[11rem]">
+          <!-- Top Card -->
+          <div class="absolute w-full -z-10 -top-7">
+            <div class="flex justify-end bg-c_Play rounded-[10px] pr-3 pb-6">
+              <img class="w-12" src="images/icon-play.svg" alt="">
+            </div>
+          </div>
+          <!-- Bottom Card -->
+          <div class="bg-c_DarkBlue text-white p-[25px] rounded-[10px]">
+            <div class="flex flex-row items-center justify-between mb-5">
+              <p class="text-xs">Play</p>
+              <img class="w-4 cursor-pointer" src="images/icon-ellipsis.svg" alt="">
+            </div>
+            <h2 class="text-5xl font-light mb-3">10hrs</h2>
+            <p class="text-xs text-c_PaleBlue font-light">Last Week - 8hrs</p>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="relative my-6 mr-5 w-[11rem]">
+          <!-- Top Card -->
+          <div class="absolute w-full -z-10 -top-7">
+            <div class="flex justify-end bg-c_Study rounded-[10px] pr-3 pb-6">
+              <img class="w-12" src="images/icon-study.svg" alt="">
+            </div>
+          </div>
+          <!-- Bottom Card -->
+          <div class="bg-c_DarkBlue text-white p-[25px] rounded-[10px]">
+            <div class="flex flex-row items-center justify-between mb-5">
+              <p class="text-xs">Study</p>
+              <img class="w-4 cursor-pointer" src="images/icon-ellipsis.svg" alt="">
+            </div>
+            <h2 class="text-5xl font-light mb-3">4hrs</h2>
+            <p class="text-xs text-c_PaleBlue font-light">Last Week - 7hrs</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap">
+        <!-- Card -->
+        <div class="relative my-6 mr-5 w-[11rem]">
+          <!-- Top Card -->
+          <div class="absolute w-full -z-10 -top-7">
+            <div class="flex justify-end bg-c_Exercise rounded-[10px] pr-3 pb-6">
+              <img class="w-12" src="images/icon-exercise.svg" alt="">
+            </div>
+          </div>
+          <!-- Bottom Card -->
+          <div class="bg-c_DarkBlue text-white p-[25px] rounded-[10px]">
+            <div class="flex flex-row items-center justify-between mb-5">
+              <p class="text-xs">Exercise</p>
+              <img class="w-4 cursor-pointer" src="images/icon-ellipsis.svg" alt="">
+            </div>
+            <h2 class="text-5xl font-light mb-3">4hrs</h2>
+            <p class="text-xs text-c_PaleBlue font-light">Last Week - 5hrs</p>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="relative my-6 mr-5 w-[11rem]">
+          <!-- Top Card -->
+          <div class="absolute w-full -z-10 -top-7">
+            <div class="flex justify-end bg-c_Social rounded-[10px] pr-3 pb-6">
+              <img class="w-12" src="images/icon-social.svg" alt="">
+            </div>
+          </div>
+          <!-- Bottom Card -->
+          <div class="bg-c_DarkBlue text-white p-[25px] rounded-[10px]">
+            <div class="flex flex-row items-center justify-between mb-5">
+              <p class="text-xs">Social</p>
+              <img class="w-4 cursor-pointer" src="images/icon-ellipsis.svg" alt="">
+            </div>
+            <h2 class="text-5xl font-light mb-3">5hrs</h2>
+            <p class="text-xs text-c_PaleBlue font-light">Last Week - 10hrs</p>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="relative my-6 mr-5 w-[11rem]">
+          <!-- Top Card -->
+          <div class="absolute w-full -z-10 -top-7">
+            <div class="flex justify-end bg-c_SelfCare rounded-[10px] pr-3 pb-6">
+              <img class="w-12" src="images/icon-self-care.svg" alt="">
+            </div>
+          </div>
+          <!-- Bottom Card -->
+          <div class="bg-c_DarkBlue text-white p-[25px] rounded-[10px]">
+            <div class="flex flex-row items-center justify-between mb-5">
+              <p class="text-xs">Self Care</p>
+              <img class="w-4 cursor-pointer" src="images/icon-ellipsis.svg" alt="">
+            </div>
+            <h2 class="text-5xl font-light mb-3">2hrs</h2>
+            <p class="text-xs text-c_PaleBlue font-light">Last Week - 2hrs</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Belal Yosry</a>.
-  </div> -->
+  </div>
   <script src="/src/index.js"></script>
 </body>
 
